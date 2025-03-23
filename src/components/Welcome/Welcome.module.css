@@ -1,0 +1,45 @@
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    gap: 10%;
+    align-items: center;
+}
+
+.esquerda{
+    background-color: #2b3566;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+    width: 50%;
+    border-radius: 20px;
+}
+
+p{
+    font-size: 25px;
+}
+
+.btnstart{
+    background-color: #2b3566;
+    padding: 2rem 5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    opacity: .7;
+    font-size: 30px;
+    margin: 20px;
+}
+.btnstart:hover{
+    opacity: 1;
+}
+.direita{
+    background-color: #2b3566;
+    height: 350px;
+    width: 20%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
