@@ -1,10 +1,11 @@
+
 import styles from './Dataroom.module.css'
 import { useState } from 'react'
 
 
 const Dataroom = () => {
   const [roomcreated, setRoomcreated] = useState(false)
-
+  const [teacher, setTeacher] = useState("")
   const createRoom = () => {
     setRoomcreated(true)
   }
@@ -15,8 +16,8 @@ const Dataroom = () => {
     
     
     <div className={styles.inforoom}>
-      <input type='text'placeholder='Nome da professora responsável' />
-      <input type='text'placeholder='Informe o nome da turma / Nome da sala' />
+      <input type='text'placeholder='Nome da professora responsável' onChange={(e) => setTeacher(e.target.value)} />
+      <input type='text'placeholder='Informe o nome da turma / Nome da sala'  />
       <br></br>
       <input type="number"placeholder='Número de colunas/fileiras da sala'/>
       <input type='number'placeholder='Número de linhas da sala' />
@@ -26,7 +27,7 @@ const Dataroom = () => {
 
     <div className={styles.classroom}>
       {roomcreated ? (<div>
-        <p> Professora:</p>
+        <p> Professora: {teacher} </p>
         <span> Sala:</span>
         <span> Número de colunas:</span>
         <span> Número de linhas:</span>

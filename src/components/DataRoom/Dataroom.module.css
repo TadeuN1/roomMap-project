@@ -1,6 +1,5 @@
 .container{
     display: flex;
-    border: 5px solid red;
 }
 
 .inforoom{
@@ -26,5 +25,5 @@ button{
 }
 
 .classroom{
-    border: 5px solid red;
+    background-color: #2b3566;
 }
